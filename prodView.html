@@ -7,15 +7,14 @@
   }
   </style>
 
-<script>
-window.dataLayer = window.dataLayer || [];
-dataLayer.push({
- 'user_id': '654321',
- 'pageName': 'Index Page',
- 'pageCategory': 'index',
- 'visitorType': 'normal'
-});
-</script>
+  <script>
+  	dataLayer = [{
+  		'user_id': '654321',
+  		'pageName': 'Product View Page',
+  		'pageCategory': 'index',
+  		'visitorType': 'normal'
+  	}];
+  </script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,16 +24,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-M95PPBG');</script>
 <!-- End Google Tag Manager -->
 
-  <title>Jwahs' Google Analytics Test Page </title>
+  <title>Product View Page </title>
 </head>
 
 <body>
-<h1>Welcome to Jason's Test Page</h1>
+<h1>Product View Test Page</h1>
 
-Here we have analytics tags for Demo, as we learn through the modern world of digital analytics.<p>
-
-<a href="prodView.html">Link to a Product Page</a><br>
-<a href="contentpage.html" onclick="dataLayer.push({'event':'content-click', 'contentId': '123456', 'contentCategory': 'Sports'})">Link to Content Page</a>
+<p>For the sake of this demo, click <a href="thankyou.html">here</a> to purchase Product 123456<p>
+Click here to link back to the <a href="homepage.html">homepage</a>.<br>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M95PPBG"
