@@ -11,81 +11,79 @@
   window.dataLayer = window.dataLayer || [];
   transaction_id = Math.floor(Math.random() * 1000);
   dataLayer.push({
-  'user_id': '654321',
-  'pageName': 'Purchase Page',
-  'pageCategory': 'Purchase Page',
-  'visitorType': 'normal',
-  'event': 'purchase',
-  'transactionId': transaction_id,
-  'transactionAffiliation': 'Salomon Snowboards',
-  'transactionTotal': 1399.85,
-  'transactionTax': 49.99,
-  'transactionShipping': 5.99,
-  'transactionProducts': [{
-         'sku': 'S67890',
-         'name': 'Salomon Speedway Freeride Snowboard',
-         'category': 'Snowboards',
-         'price': '599.95',
-         'index': 1,
-         'quantity': 1
-  },
-  {
-         'sku': 'B12345',
-         'name': 'Salomon Lo Fi Product Boot',
-         'category': 'Boots',
-         'price': '399.95',
-         'index': 2,
-         'quantity': 2
-     },
-  ],
-  'ecommerce': [{
-    'purchase': [{
-       'transactionId': transaction_id,
-       'actionField': {
-        'id': '1'
-        'currency': 'USD',
-        'shipping': 5.99,
-        'revenue': 1399.85,
-        'tax': 49.99,
-       },
-       'currency': 'USD',
-       'shipping': 5.99,
-       'value': 1399.85,
-       'tax': 49.99,
-       'items': [{
-         'item_name': 'Salomon Speedway Freeride Snowboard',
-         'sku': '67890',
-         'price': '599.95',
-         'item_brand': 'Salomon',
-         'item_category': 'Snowboards',
-         'item_category_2': 'Mens',
-         'item_category_3': 'Snowboards',
-         'item_category_4': 'Snowboards',
-         'item_variant': 'Black',
-         'item_list_name': 'Search Results',
-         'item_price': '599.95',
-         'index': 1,
-         'quantity': 1
-       },
-       {
-         'item_name': 'Salomon Lo Fi Product Boot',
-         'sku': 'B12345',
-         'price': '599.95',
-         'item_brand': 'Salomon',
-         'item_category': 'Snowboards',
-         'item_category_2': 'Mens',
-         'item_category_3': 'Snowboards',
-         'item_category_4': 'Snowboards',
-         'item_variant': 'Black',
-         'item_list_name': 'Search Results',
-         'item_price': '399.95',
-         'index': 1,
-         'quantity': 2
-       }
-
-     }]
-  }]
-});
+    'event': 'purchase',
+    'user_id': '654321',
+    'pageName': 'Purchase Page',
+    'pageCategory': 'Purchase Page',
+    'visitorType': 'normal',
+    'transactionId': transaction_id,
+    'transactionAffiliation': 'Salomon Snowboards',
+    'transactionTotal': 1399.85,
+    'transactionTax': 49.99,
+    'transactionShipping': 5.99,
+    'transactionProducts': [{
+           'sku': 'S67890',
+           'name': 'Salomon Speedway Freeride Snowboard',
+           'category': 'Snowboards',
+           'price': '599.95',
+           'index': 1,
+           'quantity': 1
+    },
+    {
+           'sku': 'B12345',
+           'name': 'Salomon Lo Fi Product Boot',
+           'category': 'Boots',
+           'price': '399.95',
+           'index': 2,
+           'quantity': 2
+    }]
+  });
+/*   'ecommerce': [{
+      'purchase': [{
+         'transactionId': transaction_id,
+         'actionField': {
+          'id': '1'
+          'currency': 'USD',
+          'shipping': 5.99,
+          'revenue': 1399.85,
+          'tax': 49.99,
+         },
+         'currency': 'USD',
+         'shipping': 5.99,
+         'value': 1399.85,
+         'tax': 49.99,
+         'items': [{
+           'item_name': 'Salomon Speedway Freeride Snowboard',
+           'sku': '67890',
+           'price': '599.95',
+           'item_brand': 'Salomon',
+           'item_category': 'Snowboards',
+           'item_category_2': 'Mens',
+           'item_category_3': 'Snowboards',
+           'item_category_4': 'Snowboards',
+           'item_variant': 'Black',
+           'item_list_name': 'Search Results',
+           'item_price': '599.95',
+           'index': 1,
+           'quantity': 1
+         },
+         {
+           'item_name': 'Salomon Lo Fi Product Boot',
+           'sku': 'B12345',
+           'price': '599.95',
+           'item_brand': 'Salomon',
+           'item_category': 'Snowboards',
+           'item_category_2': 'Mens',
+           'item_category_3': 'Snowboards',
+           'item_category_4': 'Snowboards',
+           'item_variant': 'Black',
+           'item_list_name': 'Search Results',
+           'item_price': '399.95',
+           'index': 1,
+           'quantity': 2
+         }
+       }]
+    }]  */
   </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
