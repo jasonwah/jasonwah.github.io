@@ -11,7 +11,7 @@
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
  'user_id': '654321',
- 'pageName': 'Index Page',
+ 'pageName': 'Checkout Page',
  'pageCategory': 'index',
  'visitorType': 'normal'
 });
@@ -25,20 +25,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-M95PPBG');</script>
 <!-- End Google Tag Manager -->
 
-  <title>Jwahs' Google Analytics Test Page </title>
+  <title>Shopping Checkout Test Page </title>
 </head>
 
 <body>
-<h1>Welcome to Jason's Test Page</h1>
+<h1>Welcome to Jason's Test Page</h1>checkout
 
 <br>
-<img src="/images/homepageImage.png"></img>
+  <img src="/images/homepageImage.png"></img>
 </br>
 
-Here we have analytics tags for Demo, as we learn through the modern world of digital analytics.<p>
+Here is your cart - it contains product: 
 
-<a href="prodList.html">Click here to view the Product Listings</a><br>
-<a href="contentpage.html" onclick="dataLayer.push({'event':'content-click', 'contentId': '123456', 'contentCategory': 'Sports'})">Link to Content Page</a>
+<a href="checkout.html?prodid=23456" onclick="dataLayer.push({'event':'checkout', 'productID': '23456', 'contentCategory': 'Apparel'})"><img src="/images/purchaseButton.png"></img></a>
+
+Click here to link back to the <a href="index.html">homepage</a>.<br>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M95PPBG"

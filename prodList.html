@@ -11,7 +11,7 @@
   window.dataLayer = window.dataLayer || [];
   dataLayer.push({
   		'user_id': '654321',
-  		'pageName': 'Product View Page',
+  		'pageName': 'Product Listing Page',
   		'pageCategory': 'index',
   		'visitorType': 'normal'
   	});
@@ -24,10 +24,10 @@
        'item_id': '12345',
        'price': '399.95',
        'item_brand': 'Salomon',
-       'item_category': 'Apparel',
+       'item_category': 'Boots',
        'item_category_2': 'Mens',
-       'item_category_3': 'Shirts',
-       'item_category_4': 'Tshirts',
+       'item_category_3': 'Boots',
+       'item_category_4': 'Snowboard',
        'item_variant': 'Gray',
        'item_list_name': 'Search Results',
        'item_list_id': 'SR123',
@@ -39,10 +39,10 @@
        'item_id': '67890',
        'price': '599.95',
        'item_brand': 'Salomon',
-       'item_category': 'Apparel',
+       'item_category': 'Snowboards',
        'item_category_2': 'Mens',
-       'item_category_3': 'Shirts',
-       'item_category_4': 'Tshirts',
+       'item_category_3': 'Snowboards',
+       'item_category_4': 'Snowboards',
        'item_variant': 'Black',
        'item_list_name': 'Search Results',
        'item_list_id': 'SR123',
@@ -56,8 +56,8 @@
        'item_brand': 'Salomon',
        'item_category': 'Apparel',
        'item_category_2': 'Mens',
-       'item_category_3': 'Shirts',
-       'item_category_4': 'Tshirts',
+       'item_category_3': 'Jackets',
+       'item_category_4': 'Light Shell',
        'item_variant': 'Black',
        'item_list_name': 'Search Results',
        'item_list_id': 'SR123',
@@ -82,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-<h1>Product View Test Page</h1>
+<h1>Product Listing Page</h1>
 
 <table style="width:100%">
   <tr>
@@ -91,14 +91,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <th><img src="/images/speedwaySnowboardImage.png"></img></th>
   <tr>
   <tr>
-    <th><img src="/images/addToCartButton.png"></img></th>
-    <th><img src="/images/addToCartButton.png"></img></th>
-    <th><img src="/images/addToCartButton.png"></img></th>
+    <th><a href="checkout.html?prodid=12345" onclick="dataLayer.push({'event':'add-to-cart', 'productID': '12345', 'contentCategory': 'Boots'})"><img src="/images/addToCartButton.png"></img></a></th>
+    <th><a href="checkout.html?prodid=67890" onclick="dataLayer.push({'event':'add-to-cart', 'productID': '67890', 'contentCategory': 'Snowboards'})"><img src="/images/addToCartButton.png"></img></a></th>
+    <th><a href="checkout.html?prodid=23456" onclick="dataLayer.push({'event':'add-to-cart', 'productID': '23456', 'contentCategory': 'Apparel'})"><img src="/images/addToCartButton.png"></img></a></th>
   <tr>
+</table>
 
-
-
-<p>For the sake of this demo, click <a href="thankyou.html">here</a> to purchase Product 123456<p>
 Click here to link back to the <a href="index.html">homepage</a>.<br>
 
 <!-- Google Tag Manager (noscript) -->
