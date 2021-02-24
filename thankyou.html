@@ -42,7 +42,11 @@
     'purchase': [{
        'transactionId': transaction_id,
        'actionField': {
-         id: '1'
+        'id': '1'
+        'currency': 'USD',
+        'shipping': 5.99,
+        'revenue': 1399.85,
+        'tax': 49.99,
        },
        'currency': 'USD',
        'shipping': 5.99,
@@ -100,7 +104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 Here we are firing the eCommerce Tags.<p>
 
 The Transaction ID is: <script>document.write(getParameterByName("transaction_id"))</script> <p>
-  
+
 Here is a link back to the <a href="index.html">homepage</a>.<br>
 
 <!-- Google Tag Manager (noscript) -->
