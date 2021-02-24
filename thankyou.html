@@ -30,7 +30,7 @@
          'quantity': 1
   },
   {
-         'sku': 'S67890',
+         'sku': 'B12345',
          'name': 'Salomon Lo Fi Product Boot',
          'category': 'Boots',
          'price': '399.95',
@@ -38,19 +38,19 @@
          'quantity': 2
      },
   ],
-  'ecommerce': {
-    'purchase': [
-     {
+  'ecommerce': [{
+    'purchase': [{
        'transactionId': transaction_id,
        'actionField': {
          id: '1'
        },
        'currency': 'USD',
        'shipping': 5.99,
-       'value': 599.95,
-       'items': {
+       'value': 1399.85,
+       'tax': 49.99,
+       'items': [{
          'item_name': 'Salomon Speedway Freeride Snowboard',
-         'item_id': '67890',
+         'sku': '67890',
          'price': '599.95',
          'item_brand': 'Salomon',
          'item_category': 'Snowboards',
@@ -59,12 +59,28 @@
          'item_category_4': 'Snowboards',
          'item_variant': 'Black',
          'item_list_name': 'Search Results',
-         'item_list_id': 'SR123',
+         'item_price': '599.95',
          'index': 1,
-         'quantity': '1'
+         'quantity': 1
+       },
+       {
+         'item_name': 'Salomon Lo Fi Product Boot',
+         'sku': 'B12345',
+         'price': '599.95',
+         'item_brand': 'Salomon',
+         'item_category': 'Snowboards',
+         'item_category_2': 'Mens',
+         'item_category_3': 'Snowboards',
+         'item_category_4': 'Snowboards',
+         'item_variant': 'Black',
+         'item_list_name': 'Search Results',
+         'item_price': '399.95',
+         'index': 1,
+         'quantity': 2
        }
+
      }]
-  }
+  }]
 });
   </script>
 <!-- Google Tag Manager -->
@@ -83,6 +99,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 Here we are firing the eCommerce Tags.<p>
 
+The Transaction ID is: <script>document.write(getParameterByName("transaction_id"))</script> <p>
+  
 Here is a link back to the <a href="index.html">homepage</a>.<br>
 
 <!-- Google Tag Manager (noscript) -->
