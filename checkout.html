@@ -15,6 +15,15 @@ dataLayer.push({
  'pageCategory': 'index',
  'visitorType': 'normal'
 });
+
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 </script>
 
 <!-- Google Tag Manager -->
@@ -31,11 +40,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 <h1>Welcome to Jason's Test Page</h1>checkout
 
-<br>
-  <img src="/images/homepageImage.png"></img>
-</br>
-
 Here is your cart - it contains product: 
+<script>
+  document.write(getParameterByName(prodid))
+</script>
+<br>
 
 <a href="checkout.html?prodid=23456" onclick="dataLayer.push({'event':'checkout', 'productID': '23456', 'contentCategory': 'Apparel'})"><img src="/images/purchaseButton.png"></img></a>
 
