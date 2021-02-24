@@ -42,11 +42,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 Here is your cart - it contains product: 
 <script>
-  document.write(getParameterByName(prodid))
+  document.write(getParameterByName("prodid"))
 </script>
 <br>
 
-<a href="checkout.html?prodid=23456" onclick="dataLayer.push({'event':'checkout', 'productID': '23456', 'contentCategory': 'Apparel'})"><img src="/images/purchaseButton.png"></img></a>
+<a href="thankyou.html?prodid=23456" onclick="dataLayer.push({'event':'checkout', 'productID': '23456', 'contentCategory': 'Apparel'})"><img src="/images/purchaseButton.png"></img></a><br>
 
 Click here to link back to the <a href="index.html">homepage</a>.<br>
 
