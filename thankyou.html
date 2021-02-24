@@ -9,16 +9,42 @@
 
   <script>
   window.dataLayer = window.dataLayer || [];
+  transaction_id = Math.floor(Math.random() * 1000);
   dataLayer.push({
   'user_id': '654321',
   'pageName': 'Purchase Page',
   'pageCategory': 'Purchase Page',
   'visitorType': 'normal',
   'event': 'purchase',
+  'transactionId': transactionId,
+  'transactionAffiliation': 'Salomon Snowboards',
+  'transactionTotal': 1399.85,
+  'transactionTax': 49.99,
+  'transactionShipping': 5.99,
+  'transactionProducts': [{
+         'sku': 'S67890',
+         'name': 'Salomon Speedway Freeride Snowboard'
+         'category': 'Snowboards',
+         'price': '599.95',
+         'index': 1,
+         'quantity': 1
+  },
+  {
+         'sku': 'S67890',
+         'name': 'Salomon Lo Fi Product Boot',
+         'category': 'Boots'
+         'price': '399.95',
+         'index': 2,
+         'quantity': 2
+     },
+  ],
   'ecommerce': {
     'purchase': [
      {
-       'transaction_id': Math.floor(Math.random() * 1000),
+       'transactionId': transaction_id,
+       'actionField': {
+         id: '1'
+       }
        'currency': 'USD',
        'shipping': 5.99,
        'value': 599.95,
